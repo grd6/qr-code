@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./qr_code/assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor QR code component</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --white: hsl(0, 0%, 100%);
+            --light_gray: hsl(212, 45%, 89%);
+            --grayish_blue: hsl(220, 15%, 55%);
+            --dark_blue: hsl(218, 44%, 22%);
+            --sm: 15px;
+        }
+
+        .main-card {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: var(--light_gray);
+        }
+
+        .border-card {
+            display: grid;
+            grid-template-rows: 1fr auto;
+            width: 280px;
+            align-self: center;
+            justify-content: center;
+            background-color: var(--white);
+            border-radius: 20px;
+        }
+
+        .code-cr img {
+            border-radius: 20px;
+            max-width: 100%;
+            margin-top: 18px;
+            padding: 10px;
+        }
+
+        .info_qr {
+            display: flex;
+            flex-direction: column;
+            width: 280px;
+
+
+        }
+
+        .info_qr p:nth-child(1) {
+            font-size: 20px;
+            width: 267px;
+            font-family: "Outfit";
+            font-weight: 700;
+            padding: 20px;
+            text-align: justify;
+
+
+        }
+
+        .info_qr p:nth-child(2) {
+            font-family: "Outfit";
+            font-size: var(--sm);
+            font-weight: 400;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .attribution {
+            font-size: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="main-card">
+        <div class="border-card">
+            <div class="code-cr">
+               <img src="./assets/images/image-qr-code.png"
+            </div>
+            <div class="info_qr">
+                <P>Improve your front-end skills by building projects</P>
+                <p>Scan the QR code to visit Frontend Mentor and taje your coding skills to the next level</p>
+            </div>
+        </div>
+        <p class="attribution">Challenge by<a href="https://www.frontendmentor.io/" target="_blank">Frontend
+                Mentor</a>code by<a href="">GRD</a></p>
+    </aside>
+    
+</body>
+
+</html>
